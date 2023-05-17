@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:300,400,700'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
+<style>
+/* Styles for the form */
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Styles for the form overlay */
+.form-popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Styles for the open form button */
+.open-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for the close form button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+
+  <aside class="sidebar">
+
+    <img src="m.jpg" alt="Logo" class="sidebar__logo" />
+
+    <div class="menu">
+      <span>Carbon Z Pay</span>
+      <i class="material-icons">expand_more</i>
+    </div>
+    <br>
+    <br>
+
+    <h4 class="heading-4">Services</h4>
+    <ul class="navigation">
+
+      <li class="navigation__item">
+
+        <a href=" ../family/index.html" class="navigation__link">
+          <i class="material-icons navigation__icon">group</i>
+          <span>Proposal</span>
+        </a>
+
+      </li>
+
+      <li class="navigation__item">
+
+        <a href="#" id="transaction"class="navigation__link">
+          <i class="material-icons navigation__icon">person</i>
+          <span class="action-button" onclick="confirmAction()">Put on Sale</span>
+        </a>
+        <script>
+          // Function to handle the action confirmation
+          function confirmAction() {
+            // Show a confirmation pop-up
+            const confirmed = confirm("Are you sure you want to put your carbon credits on Market ?");
+
+            // Check if the action was confirmed
+            if (confirmed) {
+              // Perform the action
+              alert("Action confirmed!");
+            } else {
+              // Cancelled the action
+              alert("Action cancelled!");
+            }
+          }
+        </script>
+      </li>
+      <li class="navigation__item">
+
+        <a href=" ../index.html" class="navigation__link">
+          <i class="material-icons navigation__icon">group</i>
+          <span>Markets</span>
+        </a>
+
+      </li>
+      <li class="navigation__item">
+
+        <a href=" ../transactions/index.html" class="navigation__link">
+          <i class="material-icons navigation__icon">group</i>
+          <span>Queries</span>
+        </a>
+
+      </li>
+      <li class="navigation__item">
+
+        <a href=" ../transactions/index.html" class="navigation__link">
+          <i class="material-icons navigation__icon">group</i>
+          <span>Terms & Conditions</span>
+        </a>
+
+      </li>
+      <li class="navigation__item">
+
+        <a href=" ../bank/index.html" class="navigation__link">
+          <i class="material-icons navigation__icon">group</i>
+          <span>Connect Binance.</span>
+        </a>
+
+      </li>
+    </ul>
+
+
+    <h4 class="heading-4">Other</h4>
+    <ul class="navigation">
+
+      <li class="navigation__item navigation__item--active">
+
+        <a href="pay/mpesa.html" class="navigation__link">
+          <i class="material-icons navigation__icon">attach_money</i>
+          <span>Private Contracts</span>
+        </a>
+
+      </li>
+
+      <li class="navigation__item">
+
+        <a href="#" class="navigation__link">
+          <i class="material-icons navigation__icon">attach_money</i>
+          <span>Local Markets</span>
+        </a>
+
+      </li>
+
+      <li class="navigation__item">
+
+        <a href="lipa/mpesa.html" class="navigation__link">
+          <i class="material-icons navigation__icon">attach_money</i>
+          <span>Logout</span>
+        </a>
+
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <header class="header">
+
+    <nav class="user-nav">
+      <div class="user-nav__icon-box">
+        <i class="material-icons user-nav__icon">search</i>
+      </div>
+      <div class="user-nav__icon-box">
+        <i class="material-icons user-nav__icon">notifications</i>
+        <span class="user-nav__notification">99</span>
+      </div>
+      <div class="user-nav__icon-box">
+        <i class="material-icons user-nav__icon">settings</i>
+      </div>
+      <div class="user-nav__user">
+        <img src="Gold.jpg" style="height:60px;width: 60px;" alt="User photo" class="user-nav__user-photo">
+      </div>
+      <div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <header class="main__header">
+
+      <h1 class="heading-1">
+        <i class="material-icons heading-1__icon">group</i>
+        <span>Welcome to Carbon Zero Payments       </span>
+      </h1>
+
+
+        <p id="datetime"></p>
+
+
+
+    </header>
+
+    <section class="highlights">
+
+      <article class="highlights__item">
+
+        <img src="m.jpg" style="height: 160px;width: 160px;" alt="Profile Picture" class="highlights__img" />
+          <div class="highlights__text">
+            <p class="highlights__text--primary">Interns Under Pay</p>
+            <p class="highlights__text--secondary"><a href=" ../transactions/index.html">Bill List</a></p>
+          </div>
+
+        <div class="highlights__text">
+            <button class="highlights__text--primary commons__orange" >Payment</button>
+
+        </div>
+
+
+      </article>
+
+      <article class="highlights__item">
+
+        <img src="profile.jpg" alt="Profile Picture" class="highlights__img" style="height: 160px;width: 160px;"  />
+          <div class="highlights__text">
+            <p class="highlights__text--primary" id="name-display"></p>
+            <p class="highlights__text--secondary">Your account wallet address is: </p>
+          </div>
+
+        <div class="highlights__text">
+            <button id="openFormButton"  style=" font-size: 20px;" class="highlights__text--primary commons__green">Profile Settings</button>
+            <div class="form-popup-overlay" id="closeFormButton"></div>
+            <form id="myForm" class="form-popup">
+              <h2>Profile Settings</h2>
+              <label for="name">Name:</label>
+              <input type="text" id="name-input" name="name" required>
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+
+              <label for="fruits">Select a fruit:</label>
+  <select id="fruits" name="fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="orange">Orange</option>
+    <option value="strawberry">Strawberry</option>
+  </select>
+  <br>
+  <br>
+              <button id="submit" type="submit">Submit</button>
+              <span class="close-button" id="closeButton">&times;</span>
+            </form>
+
+        </div>
+
+
+      </article>
+
+      <article class="highlights__item">
+
+        <img src="Gold.jpg" alt="Profile Picture" class="highlights__img" style="height: 160px;width: 160px;" />
+          <div class="highlights__text">
+            <p class="highlights__text--primary">Transaction History</p>
+            <p class="highlights__text--secondary">Balance as per :<span >300</span></p>
+          </div>
+
+        <div class="highlights__text">
+            <p class="highlights__text--primary commons__red">Access</p>
+
+        </div>
+
+
+      </article>
+
+    </section>
+
+    <section class="overview">
+      <h3 class="heading-3">Underway Project Transact</h3>
+
+      <article class="overview__item">
+
+        <span class="overview__text overview__text--primary" id="number">300  </span>
+        <span class="overview__text overview__text--secondary"> Carbon Credits worth $ 5000  </span>
+          <span class="overview__text overview__text--secondary">           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                      {
+                        "width": 500, // Adjust the width value as per your requirements
+                        "height": 5, // Adjust the height value as per your requirements
+                        "colorTheme": "dark",
+                        "isTransparent": true,
+                        "locale": "en"
+                      }
+                  </script>  </span>
+
+      </article>
+      <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+          "symbols": [
+            {
+              "description": "Verra (ERC)",
+              "proName": "BINANCE:ADAUSDT"
+            },
+            {
+              "description": "American Carbon Registry (ACR):",
+              "proName": "BINANCE:ADAUSDT"
+            },
+            {
+              "description": "Climate Action Reserve(CAR)",
+              "proName": "BINANCE:BNBUSDT"
+            },
+            {
+              "description": "ClimateCare (CC)",
+              "proName": "BINANCE:XRPUSDT"
+            },
+            {
+              "description": "South Pole: (SP)",
+              "proName": "BINANCE:UNIUSDT"
+            },
+            {
+              "description": "Natural Capital Partners:(NCP)",
+              "proName": "BINANCE:SOLUSDT"
+            },
+            {
+              "description": "UNFCCC Clean Development Mechanism (CDM)",
+              "proName": "BINANCE:DOTUSDT"
+            },
+            {
+              "description": "Gold Standard:(GD)",
+              "proName": "BINANCE:DOGEUSDT"
+            },
+
+            {
+              "description": "Carbon Trade Exchange (CTX):",
+              "proName": "BINANCE:MATICUSDT"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "light",
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+          </script>
+        </div>
+    </section>
+
+    <section class="div-table">
+      <header class="div-table__header">
+        <h2 class="heading-2">Transaction receipt</h2>
+      </header>
+
+      <main class="div-table__main">
+
+
+        <article class="div-table__row">
+          <img src="m.jpg" alt="Profile Picture" class="div-table__img" style="width:100px;height:100px;"/>
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--left">CTX </p>
+            <p class="div-table__text--secondary div-table__text--left">Sold Carbon credit in the CTX</p>
+          </div>
+
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--center">200 </p>
+            <p class="div-table__text--secondary div-table__text--center">USDC</p>
+          </div>
+
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--center commons__green">Approved</p>
+            <p class="div-table__text--secondary div-table__text--center">Payment</p>
+          </div>
+
+          <div class="div-table__actions">
+            <i class="material-icons">more_vert</i>
+          </div>
+        </article>
+
+        <article class="div-table__row">
+          <img src="m.jpg" alt="Profile Picture" class="div-table__img" style="width:100px;height:100px;"/>
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--left">Project Proposal</p>
+            <p class="div-table__text--secondary div-table__text--left">Approved</p>
+          </div>
+
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--center">500 s</p>
+            <p class="div-table__text--secondary div-table__text--center">USDC</p>
+          </div>
+
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--center commons__green">Paid</p>
+            <p class="div-table__text--secondary div-table__text--center">Payments</p>
+          </div>
+
+          <div class="div-table__actions">
+            <i class="material-icons">more_vert</i>
+          </div>
+        </article>
+
+        <article class="div-table__row">
+          <img src="m.jpg" alt="Profile Picture" class="div-table__img" style="width:100px;height:100px;"/>
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--left">Interns registration</p>
+            <p class="div-table__text--secondary div-table__text--left">PLease provide your workers list of interns</p>
+          </div>
+
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--center">100 S</p>
+            <p class="div-table__text--secondary div-table__text--center">USDC</p>
+          </div>
+
+          <div class="div-table__text">
+            <p class="div-table__text--primary div-table__text--center commons__green">Paid</p>
+            <p class="div-table__text--secondary div-table__text--center">Settings</p>
+          </div>
+
+          <div class="div-table__actions">
+            <i class="material-icons">more_vert</i>
+          </div>
+        </article>
+
+      </main>
+
+    </section>
+
+  </main>
+
+</div>
+<!-- partial -->
+<script>
+// Get the form and button elements
+const form = document.getElementById('myForm');
+const openButton = document.getElementById('openFormButton');
+const closeButton = document.getElementById('closeButton');
+
+// Function to open the form
+function openForm() {
+  form.style.display = 'block';
+}
+
+// Function to close the form
+function closeForm() {
+  form.style.display = 'none';
+}
+
+// Event listeners for opening and closing the form
+openButton.addEventListener('click', openForm);
+closeButton.addEventListener('click', closeForm);
+</script>
+      <script>
+        const datetimeElement = document.getElementById("datetime");
+        const updateDateTime = () => {
+          const now = new Date();
+          const dateStr = now.toLocaleDateString();
+          const timeStr = now.toLocaleTimeString();
+          datetimeElement.textContent = `${dateStr} ${timeStr}`;
+        };
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+      </script>
+   <script>
+    let num = 300;
+    const intervalId = setInterval(() => {
+      const increment = Math.random() > 0.5 ? 1 : -1;
+      num += increment;
+      document.getElementById('number').textContent = num;
+    }, 1000);
+
+    function stopInterval() {
+      clearInterval(intervalId);
+    }
+  </script>
+
+
+  <script>
+    const name = localStorage.getItem("name");
+      const nameElement = document.getElementById("name-display");
+
+      if (name) {
+        nameElement.textContent = "Hello, " + name + "!";
+      } else {
+        nameElement.textContent = "No name entered.";
+      }
+
+  </script>
+
+<script  type="text/javascript" src="index.js"></script>
+</body>
+</html>
