@@ -1,0 +1,569 @@
+/* Everything*/
+
+* {
+    font-family:'montserrat', 'montserrat', 'montserrat', sans-serif;
+}
+
+/* The header of the page */
+
+.header {
+    display: flex;
+    height: 5em;
+}
+body{
+  background-color: black;
+}
+.h1-div {
+    margin: 0;
+    width: 100VW;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 7px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.7em;
+
+}
+
+.PerformanteLogo {
+    height: 3em;
+    margin-top: 0.5em;
+    transition-duration: 400ms;
+}
+
+.PerformanteLogo:hover {
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+
+.img-div {
+    width: 12em;
+    height: 5em;
+}
+
+/* Relative strength/weakness tool */
+
+.section1-relative-strength-weakness-tool {
+    height: 28.5em;
+    border-style: solid;
+    box-shadow: 0em 0em .8em .5em red;
+}
+
+.addAltcoinForm {
+    text-align: center;
+    margin-top: -0.9em;
+}
+
+.rswtest {
+    width: 100%;
+    height: 4em;
+    margin-top: -1.5em;
+    display: block;
+}
+
+/* timeframe form area */
+
+.timeframe-form {
+    position: absolute;
+    margin-top: -0.4em;
+    margin-left: 1em;
+}
+
+.timeframe {
+    width: 4em;
+    display: flex;
+}
+
+.timeframe-btn-div {
+    margin: 0;
+    margin-top: -1.3em;
+}
+
+.timeframe-btn {
+    height: 2em;
+    width: 11em;
+    margin: 0;
+    margin-top: -4em;
+    font-weight: 400;
+    font-size: xx-small;
+}
+
+.daysInput{
+    display: flex;
+}
+
+.days {
+    margin: 0;
+    display: flex;
+}
+
+/* altcoin add-on section */
+
+.rswtest-title {
+    margin-top: -1.2em;
+}
+
+.addAltform {
+    height: 2em;
+    height: 1.5em;
+    width: 100%;
+    margin-top: -1em;
+    display: flex;
+}
+
+.altInputDiv {
+    justify-content: center;
+    width: 100%;
+    margin-left: 8em;
+}
+
+.descripton {
+    width: 20em;
+    height: 6.4em;
+    font-size: xx-small;
+    justify-content: right;
+    border-style: solid;
+    margin-top: -2em;
+    margin-right: -0.2em;
+    overflow: hidden;
+}
+
+/* altcoin list below the relative strength/weakness tool */
+
+.section2-altList-convert-sentiment-btcd {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.convertorDiv {
+    width: 100%;
+}
+
+canvas {
+    max-height: 100%;
+}
+
+.right-side-ofPage {
+    height: 32em;
+    display: relative;
+}
+
+.btc-tools-mid-section {
+    width: 100%;
+    height: 20em;
+    display: flex;
+}
+
+.CalculationDiv {
+ display: flex;
+}
+
+.fearandgreedindex {
+    width: 83%;
+    display: flex;
+    margin-left: 2.6em;
+    margin-top: -0.2em;
+}
+
+.BTC-D {
+    display: flex;
+    float: left;
+    margin-right: 5em;
+    margin-top: 0.2em;
+}
+
+.future-gains {
+    margin: 1em;
+    width: 50%;
+    transform: translateX(20%);
+    height: 11em;
+}
+
+.history-gains {
+    margin: 1em;
+    float: right;
+    width: 50%;
+    height: 18em;
+    display: flex;
+    justify-content: right;
+}
+
+.section3-btctweets {
+    width: 100%;
+    height: 36em;
+}
+
+.sentiment-widget-container {
+    width: 100%;
+    height: 30em;
+}
+
+.CryptoMood {
+    border: solid 2px grey;
+    width: 100%;
+    height: 35.9em;
+    display: block;
+}
+
+.sentiment-score-p {
+    width: 47em;
+    text-align: center;
+    margin: 1em auto;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.sentiment-widget {
+    height: 99%;
+    width: 99.8%;
+    margin: 0 auto;
+}
+
+.section4-cryptomarket-overview {
+    display: block;
+    width: 100%;
+    height: 31em;
+    margin-top: 3.2em;
+    border: 2px, solid grey;
+}
+
+footer {
+    width: 100%;
+    height: 11em;
+    background-color: lightgrey;
+    border: 2px solid grey;
+    display: flex;
+}
+
+.footer-left {
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    margin-top: -1em;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+}
+
+.footer-list {
+    margin: 0;
+    margin-top: -0.5em;
+}
+
+.footer-list li {
+    text-decoration: none;
+    list-style: none;
+    width: 19em;
+    transition-duration: 400ms;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    transition-duration: 400ms;
+}
+
+.footer-list li:hover {
+    transform: scale(1.05);
+    transition-duration: 400ms;
+}
+
+.footer-right {
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+.footer-right a {
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+}
+
+.discord-div {
+    width: 100%;
+    height: 8em;
+    display: flex;
+    justify-content: right;
+}
+
+.discord-logo {
+    height: 10em;
+    margin-right: 2.3em;
+    transition-duration: 400ms;
+}
+
+.discord-logo:hover {
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+
+.section-5-container {
+    width: 100%;
+}
+
+.bitcoin-p {
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    transition: 0.4s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.active, .bitcoin-p:hover {
+    background-color: #ccc;
+  }
+
+.bitcoin-p h2 {
+    text-align: center;
+}
+
+.onchain-data-1 {
+    display: flex;
+    width: 100%;
+}
+
+.Txns-on-the-btc-network-daily {
+    width: 50%;
+}
+
+.number-of-avtive-addrs-on-the-btc-network {
+    width: 50%;
+}
+
+.onchain-data-2 {
+    display: flex;
+    width: 100%;
+}
+
+.number-of-new-addrs-on-the-btc-network {
+    width: 50%;
+}
+
+.btc-adjusted-onchain-vol {
+    width: 50%;
+    display: flex;
+}
+
+.onchain-data-3 {
+    display: flex;
+    width: 100%;
+}
+
+.btc-miner-revenue {
+    width: 50%;
+}
+
+.btc-txn-fee-percent-of-total-miner-reveue {
+    width: 50%;
+    display: flex;
+}
+
+.onchain-data-4 {
+    display: flex;
+    width: 100%;
+}
+
+.btc-hashrate-by-pool {
+    width: 50%;
+}
+
+.btc-miner-revenue-per-ths {
+    width: 50%;
+    display: flex;
+}
+
+.onchain-data-5 {
+    display: flex;
+    width: 100%;
+}
+
+.avrg-trxn-fee-btc {
+    width: 50%;
+}
+
+.percent-btc-in-profit {
+    width: 50%;
+    display: flex;
+}
+
+.onchain-data-6 {
+    display: flex;
+    width: 100%;
+}
+
+.btc-addrs-over-x {
+    width: 50%;
+}
+
+.percent-of-btc-supply-active {
+    display: flex;
+    width: 50%;
+}
+
+.defi-p {
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    transition: 0.4s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.active, .defi-p:hover {
+    background-color: #ccc;
+}
+
+.defi-p h2 {
+    text-align: center;
+}
+
+.defi-data-1 {
+    display: flex;
+    width: 100%;
+}
+
+.defi-token-market-caps {
+    width: 50%;
+    display: flex;
+}
+
+.dex-to-cex {
+    width: 50%;
+    display: flex;
+}
+
+.defi-data-2 {
+    display: flex;
+    width: 100%;
+}
+
+.share-of-dex-vol {
+    width: 50%;
+}
+
+.dex-volume {
+    width: 50%;
+    display: flex;
+}
+
+.defi-data-3 {
+    display: flex;
+    width: 100%;
+}
+
+.gross-value-locked-of-smart-contract-platform {
+    width: 50%;
+}
+
+.gross-value-locked-day-over-day-growth {
+    width: 50%;
+    display: flex;
+}
+
+.NFT-p {
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    transition: 0.4s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.active, .NFT-p:hover {
+    background-color: #ccc;
+  }
+
+.NFT-p h2 {
+    text-align: center;
+}
+
+.nft-data-1 {
+    width: 100%;
+    display: flex;
+}
+
+.weekly-trade-volume-of-nft-by-category {
+    width: 50%;
+}
+
+.weekly-nft-sales-by-category {
+    width: 50%;
+    display: flex;
+}
+
+.nft-data-2 {
+    width: 100%;
+    display: flex;
+}
+
+.avrg-price-of-nft {
+    width: 50%;
+}
+
+.nft-marketplace-volume {
+    width: 50%;
+    display: flex;
+}
+
+.alt-p {
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    transition: 0.4s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.active, .alt-p:hover {
+    background-color: #ccc;
+  }
+
+.alt-p h2 {
+    text-align: center;
+}
+
+.online-data-1 {
+    display: flex;
+    width: 100%;
+}
+
+.google-search-volume {
+    width: 50%;
+}
+
+.twitter-volume {
+    width: 50%;
+    display: flex;
+}
+
+.online-data-2 {
+    display: flex;
+    width: 100%;
+}
+
+.new-weekly-youtube-views-of-influencere-videos {
+    width: 50%;
+}
+
+.new-weekly-crypto-subreddit-subs {
+    width: 50%;
+    display: flex;
+}

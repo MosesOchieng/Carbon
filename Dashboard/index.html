@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cryptocharts"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Top Banner Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "Verra (ERC)",
+        "proName": "BINANCE:ADAUSDT"
+      },
+      {
+        "description": "American Carbon Registry (ACR):",
+        "proName": "BINANCE:ADAUSDT"
+      },
+      {
+        "description": "Climate Action Reserve(CAR)",
+        "proName": "BINANCE:BNBUSDT"
+      },
+      {
+        "description": "ClimateCare (CC)",
+        "proName": "BINANCE:XRPUSDT"
+      },
+      {
+        "description": "South Pole: (SP)",
+        "proName": "BINANCE:UNIUSDT"
+      },
+      {
+        "description": "Natural Capital Partners:(NCP)",
+        "proName": "BINANCE:SOLUSDT"
+      },
+      {
+        "description": "UNFCCC Clean Development Mechanism (CDM)",
+        "proName": "BINANCE:DOTUSDT"
+      },
+      {
+        "description": "Gold Standard:(GD)",
+        "proName": "BINANCE:DOGEUSDT"
+      },
+
+      {
+        "description": "Carbon Trade Exchange (CTX):",
+        "proName": "BINANCE:MATICUSDT"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- Top Banner Widget END -->
+
+  <!-- Header start -->
+
+    <header class="header">
+
+        <div class="img-div">
+      <button class="btn blue">Put your Carbon Credits on Sale</button>
+
+        </div>
+
+        <div class="h1-div"><h1>Carbon Zero Payments</h1></div>
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+            {
+              "width": 500, // Adjust the width value as per your requirements
+              "height": 5, // Adjust the height value as per your requirements
+              "colorTheme": "dark",
+              "isTransparent": true,
+              "locale": "en"
+            }
+        </script>
+
+        </div>
+        <!-- TradingView Widget END -->
+
+      </header>
+    <!-- Header end -->
+    <!-- Section 1 start -->
+<br>
+<br>
+    <div class="section1-relative-strength-weakness-tool" id="section1-relative-strength-weakness-tool">
+
+        <div id="mychart"></div>
+
+        <form class="timeframe-form">
+
+
+            <br>
+
+        </form>
+
+
+        <script src="/chart.js"></script>
+
+    </div>
+    <!-- Setion 1 end -->
+    <!-- Section 2 start -->
+
+  <div class="section2-altList-convert-sentiment-btcd" id="section2-altList-convert-sentiment-btcd">
+
+        <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+
+      <div class="tradingview-widget-container__widget"></div>
+
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+      {
+      "width": 1600,
+      "height": 180,
+      "symbolsGroups": [
+      {
+        "name": "Crypto",
+        "originalName": "Transactions",
+        "symbols": [
+          {
+            "name": "BINANCE:BTCUSDT",
+            "displayName": "Gold Standards (GD)"
+          },
+
+          {
+            "name": "BINANCE:ZENUSD",
+            "displayName": "Carbon Trade Exchange (CTX):"
+          },
+          {
+            "name": "FTX:SRMUSD",
+            "displayName": "ClimateCare (CC)"
+          }
+          ]
+        }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "dark",
+      "isTransparent": false,
+      "locale": "en"
+      }
+      </script>
+    </div>
+
+    <!-- TradingView Widget END -->
+
+  <footer>
+
+
+
+
+
+  </footer>
+
+  <!-- Footer end -->
+
+
+
+  <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+
+
+</body>
+</html>
