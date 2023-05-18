@@ -52,4 +52,4 @@ Acknowledgements
 
 # Contact
 
-For any inquiries or feedback, please contact us at project@example.com.
+For any inquiries or feedback, please contact us at carbonzeropayments@proton.me
