@@ -111,8 +111,8 @@ class Nft extends React.Component {
       React.createElement("div", { class: "description" }, /*#__PURE__*/
       React.createElement("h1", null, "Hello there welcome to Carbon Zero Payments."), /*#__PURE__*/
       React.createElement("h4", null, "We would like to welcome you to our platform, we would want you to read our terms and conditions for your to be elligible to use our services, choose the right option below to advance to a dashboard that would ensure that you get payment reqrds to your workforce based on your startup."), /*#__PURE__*/
-      React.createElement("p", null, "To" , /*#__PURE__*/React.createElement("a", { href: " ../Dashboard/Dashboard/index.html" }, "www.carbonzerodashboard.com"), "  for more details."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/
-      React.createElement("p", null, "To" , /*#__PURE__*/React.createElement("a", { href: " ../Dashboard/nft/index.html" }, "www.nftdashboard.com"), "  for more details."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/
+      React.createElement("p", null, "To proceed to your Dashboard  " , /*#__PURE__*/React.createElement("a", { href: " ../Dashboard/Dashboard/index.html" }, "www.carbonzerodashboard.com"), "  for more details."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/
+     
       React.createElement("section", { id: "create" }, /*#__PURE__*/
       React.createElement("h2", null, ""), /*#__PURE__*/
       React.createElement("img", { id: "", src: "" }), /*#__PURE__*/
